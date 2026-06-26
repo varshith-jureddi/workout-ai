@@ -99,7 +99,7 @@ export default function Home(){
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                   <feature.icon className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 text-background">{feature.title}</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">{feature.title}</h3>
                 <p className="text-muted text-sm">
                   {feature.description}
                 </p>

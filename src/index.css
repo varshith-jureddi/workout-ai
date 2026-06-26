@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --font-sans: "Geist", system-ui, sans-serif;
 
   --color-background: #fffcf4;
@@ -10,8 +10,68 @@
   --color-card: #18181b;
   --color-accent: #f04434;
   --color-accent-hover: #f57a6f;
+} */
+
+/* @theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+
+  --color-background: #0b0f19;
+  --color-foreground: #f8fafc;
+  --color-muted: #64748b;
+  --color-border: #1e293b;
+  --color-card: #111827;
+  --color-accent: #10b981;
+  --color-accent-hover: #059669;
+} */
+
+/* @theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-card: #ffffff;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+} */
+/* current best red black */
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+
+  --color-background: #09090b;
+  --color-foreground: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-border: #27272a;
+  --color-card: #18181b;
+  --color-accent: #e11d48;
+  --color-accent-hover: #be123c;
 }
 
+/* light -green */
+/* @theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+
+  --color-background: #fdfbf7;
+  --color-foreground: #1c1917;
+  --color-muted: #78716c;
+  --color-border: #e7e5e4;
+  --color-card: #ffffff;
+  --color-accent: #15803d;
+  --color-accent-hover: #166534;
+} */
+
+/* @theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+
+  --color-background: #030712;
+  --color-foreground: #f9fafb;
+  --color-muted: #9ca3af;
+  --color-border: #1f2937;
+  --color-card: #111827;
+  --color-accent: #8b5cf6;
+  --color-accent-hover: #7c3aed;
+} */
 @layer base {
   html {
     font-family: var(--font-sans);

@@ -7,7 +7,7 @@ export default function Navbar(){
             <div className="flex p-2 max-w-6xl mx-auto h-16 text-foreground items-center justify-between">
                 <Link to={"/"} className="flex justify-center gap-1 font-semibold">
                     <Dumbbell className="w-6 h-6 text-accent text-lg"/>
-                    <span>Gym AI</span>
+                    <span>Workout AI</span>
                 </Link>
                 <nav className="flex justify-center gap-4 text-muted">
                     <Link to={"/onboard"}>My Plan</Link>
