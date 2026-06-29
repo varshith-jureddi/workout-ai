@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# workout AI
+[![My Skills](https://skillicons.dev/icons?i=react,tailwind,typescript,&perline=4)](https://skillicons.dev)
 
-Currently, two official plugins are available:
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,prisma&perline=4)](https://skillicons.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+Create Personalised training plan tailored to you by AI based on your goals, experience and schedule prefernces
+checkout dashboard for detailed view of the current workout plan and also keep track of the version of the plan that is currently foolowed by you
+All of this with simple UI that is easy to understand and use along with good looks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Authors
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [@varshith-jureddi](https://github.com/varshith-jureddi)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Simple interface for onboarding
+- Get personalized plans
+- Easy to view and keep track of plan
+
+
+## Tech Stack
+
+
+**Client:** React, TailwindCSS
+
+**Server:** Node, Express, PostgreSQL
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/varshith-jureddi/workout-ai
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Go to the project directory
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+  cd workout-ai
 ```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the Frontend
+
+```bash
+  npm run dev
+```
+Start Backend Server
+```bash
+  cd server
+  npm run dev:server
+```
+
+For Database
+
+Create a database in the postgres server
+
+Initialise Prisma
+
+```
+  npx prisma init
+```
+
+Provide schema.prisma or Create directly in postgres
+
+Add Your postgres link to the .env file
+
+```ex
+postgres://postgres:{password}@localhost:5432/name-db?schema=public
+```
+Prisma Generate
+
+```
+  npx prisma generate
+```
+  or
+Prisma Pull(if added tables via postgres)
+```
+  npx prisma db pull
+```
+
+Add API key to the .env file to use AI
